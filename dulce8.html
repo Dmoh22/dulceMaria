@@ -1,0 +1,266 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Dulce Maria Olmedo Hernandez</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link href="https://fonts.cdnfonts.com/css/junegull" rel="stylesheet">
+    
+</head>
+<body>
+  <nav class="navbar navbar-light" style="background-color: #000000;">
+   <div class="container">
+    <a class="navbar-brand" href="index.html" style="color: white";>INICIO</a>
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="nav navbar-nav">
+    <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="unidad1.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">UNIDAD 1</a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropDownMenuLink">
+    <a class="dropdown-item" href="/Demon/dulce01.php">Practica 1</a><br>
+    <a class="dropdown-item" href="/Demon/dulce02.php">Practica 2</a><br> 
+    <a class="dropdown-item" href="/Demon/dulce03.php">Practica 3</a><br>
+    </div>
+    </li>
+    </ul>
+    <ul class="nav navbar-nav">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="unidad1.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">UNIDAD 2</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropDownMenuLink">
+<a class="dropdown-item" href="/Demon/dulce04.php">Practica 4</a><br>
+<a class="dropdown-item" href="/Demon/dulce05a.php">Practica 5</a><br>
+<a class="dropdown-item" href="/Demon/dulce6.html">Practica 6</a><br>
+</li> </ul>
+<ul class="nav navbar-nav">
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="unidad1.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">UNIDAD 3</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropDownMenuLink">
+<a class="dropdown-item" href="/Demon/dulce07.html">Practica 7</a><br>
+<a class="dropdown-item" href="/Demon/dulce8.html">Practica 8</a><br> 
+<a class="dropdown-item" href="/Demon/final.html">Practica 9</a><br>
+<a class="dropdown-item" href="/Demon/dulce10."></a><br>
+    </div>
+</div>
+</div>
+</nav>
+    <body>
+    <style>
+        :root {
+            --color-primario: #7D1697;
+            --color-secundario: #C76C12;
+            --color-terciario: #C32805;
+            --color-cuarto: #1AC51D;
+            --color-quinto: #209430;
+            --text-color: #ffffff;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: var(--color-primario);
+            color: var(--text-color);
+            font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+            line-height: 1.4;
+        }
+        header {
+            background-color: var(--color-secundario);
+            padding: 1rem;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        header img {
+            width: 80px;
+            margin-right: auto;
+        }
+        .search {
+            background-color: var(--color-primario);
+            border: 2px solid var(--color-terciario);
+            border-radius: 50px;
+            font-family: 'Lucida Sans', Geneva, sans-serif;
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            color: var(--color-terciario);
+            width: 200px;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+        .search::placeholder {
+            color: var(--color-terciario);
+        }
+        .search:hover {
+            border-color: var(--color-cuarto);
+        }
+        .search:focus {
+            outline: none;
+            background-color: var(--color-quinto);
+            color: #fff;
+        }
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 1rem;
+        }
+        .personaje {
+            background-color: var(--color-secundario);
+            border-radius: 8px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+            margin: 0.75rem;
+            overflow: hidden;
+            position: relative;
+            width: 280px;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .personaje:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.7);
+        }
+        .personaje img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            object-position: top;
+            background-color: #000;
+        }
+        .personaje-info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+            padding: 0.75rem 1rem;
+        }
+        .personaje-info h1 {
+            font-size: 1.25rem;
+            color: var(--color-terciario);
+        }
+        .personaje-info h3 {
+            font-size: 1.1rem;
+            margin: 0;
+        }
+        .personaje-info .race {
+            font-size: 0.9rem;
+            color: var(--text-color);
+        }
+        .descripcion {
+            background-color: var(--color-primario);
+            bottom: 0;
+            left: 0;
+            padding: 1rem;
+            position: absolute;
+            right: 0;
+            transform: translateY(100%);
+            transition: transform 0.3s ease-in;
+            max-height: 100%;
+            overflow-y: auto;
+        }
+        .personaje:hover .descripcion {
+            transform: translateY(0);
+        }
+        .descripcion h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+            color: var(--color-terciario);
+        }
+        .descripcion p {
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            color: var(--text-color);
+        }
+        @media (max-width: 600px) {
+            .personaje {
+                width: 100%;
+                max-width: 320px;
+            }
+            .search {
+                width: 140px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <form id="form">
+            <img src="logo.png" alt="logo">
+            <input type="text" id="search" class="search" placeholder="Buscar personaje">
+        </form>
+    </header>
+    <main id="main"></main>
+    <script>
+        const API_URL = 'https://dragonball-api.com/api/characters';
+        const main = document.getElementById('main');
+        const form = document.getElementById('form');
+        const search = document.getElementById('search');
+        let allCharacters = [];
+        getCharacters(API_URL);
+        async function getCharacters(url) {
+            try {
+                const res = await fetch(url);
+                const data = await res.json();
+                allCharacters = data.items || data;
+                showCharacters(allCharacters);
+            } catch (error) {
+                main.innerHTML = '<p style="color: #fff; font-size: 1.2rem;">No se pudo cargar la información.</p>';
+            }
+        }
+        function showCharacters(characters) {
+            main.innerHTML = '';
+            if (!characters.length) {
+                main.innerHTML = '<p style="color: #fff; font-size: 1.2rem;">No hay personajes para mostrar.</p>';
+                return;
+            }
+            characters.forEach((char) => {
+                const {
+                    id,
+                    name,
+                    image,
+                    ki = 'N/A',
+                    maxKi = 'N/A',
+                    description = '',
+                    race = 'Desconocida'
+                } = char;
+                const charElement = document.createElement('div');
+                charElement.classList.add('personaje');
+                charElement.innerHTML = `
+                    <img src="${image}" alt="${name}" onerror="this.src='https://via.placeholder.com/280x300?text=Sin+Imagen'">
+                    <div class="personaje-info">
+                        <h1>ID: ${id}</h1>
+                        <h3>${name}</h3>
+                        <span class="race">${race}</span>
+                    </div>
+                    <div class="descripcion">
+                        <h3>Descripción</h3>
+                        <p>${description || 'Sin descripción disponible.'}</p>
+                        <p><strong>Ki:</strong> ${ki}</p>
+                        <p><strong>Max Ki:</strong> ${maxKi}</p>
+                    </div>
+                `;
+                main.appendChild(charElement);
+            });
+        }
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const searchTerm = search.value.trim().toLowerCase();
+            if (searchTerm) {
+                const filtered = allCharacters.filter(c =>
+                    c.name && c.name.toLowerCase().includes(searchTerm)
+                );
+                showCharacters(filtered);
+                search.value = '';
+            } else {
+                showCharacters(allCharacters);
+            }
+        });
+    </script>
+</body>
+</html>
