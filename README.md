@@ -1,2 +1,0 @@
-# dulceMaria
-Dulce Olmedo Pagina
